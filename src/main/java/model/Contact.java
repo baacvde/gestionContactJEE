@@ -2,25 +2,40 @@ package model;
 
 
 public class Contact {
+	
+	private int id;
+
+
 	private String nom ;
 	private String prenom;
+
+
 	private String email;
 	private String telephone;
 	private int age;
-	
-	public Contact(String nom, String prenom, String email, String telephone, int age) {
-		this.setNom(nom);
-		this.setPrenom(prenom);
-		this.setEmail(email);
-		this.setTelephone(telephone);
-		this.setAge(age);
-		
-		
+
+
+	public Contact(int id, String nom, String prenom, String email, String telephone, int age) {
+		this.id = id;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.email = email;
+		this.telephone = telephone;
+		this.age = age;
 	}
 
 
-	
+	public int getId() {
+		return id;
+	}
 
+
+
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getNom() {
 		return nom;

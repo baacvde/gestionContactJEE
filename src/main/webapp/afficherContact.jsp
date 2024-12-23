@@ -46,12 +46,12 @@
                             <td>
                                 <div class="d-flex gap-2">
                                     <!-- Bouton Supprimer -->
-                                    <form action="supprimerContact" method="post">
+                                    <form action="SupprimerContactServlet" method="get">
                                         <input type="hidden" name="id" value="${contact.id}">
                                         <button type="submit" class="btn btn-danger btn-sm">Supprimer</button>
                                     </form>
                                     <!-- Bouton Modifier -->
-                                    <form action="modifierContact" method="get">
+                                    <form action="ModifierContactServlet" method="post">
                                         <input type="hidden" name="id" value="${contact.id}">
                                         <button type="submit" class="btn btn-warning btn-sm">Modifier</button>
                                     </form>

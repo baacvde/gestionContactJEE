@@ -2,4 +2,10 @@
 
 .classpath
 
-.settings/
+.setting
+
+.class
+
+/out/
+
+.idea
