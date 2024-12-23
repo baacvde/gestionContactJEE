@@ -1,6 +1,6 @@
 package controllers;
 
-import model.ContactModel;
+import model.ContactDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -21,7 +21,7 @@ public class AjouterContactServlet extends HttpServlet {
         int age = Integer.parseInt(request.getParameter("age"));
 
         // Créer une instance de ContactModel
-        ContactModel contactModel = new ContactModel();
+        ContactDAO contactModel = new ContactDAO();
 
         // Appeler la méthode ajouterContact pour ajouter le contact à la base de données
         boolean isAdded = contactModel.ajouterContact(nom, prenom, email, telephone, age);
